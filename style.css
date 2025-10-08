@@ -1,0 +1,128 @@
+/* Basic Reset and Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Toggle Buttons */
+.form-toggle {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: #e9ecef;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-toggle button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-toggle button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.form-toggle button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Form Styles */
+.auth-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Crucial for padding/border not breaking width */
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+/* Utility Classes for JS */
+.hidden {
+    display: none;
+}
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.success {
+    color: #28a745;
+}
+.error {
+    color: #dc3545;
+}
+
+/* Dashboard Styling */
+#dashboard {
+    padding: 30px;
+    background-color: #e2f0ff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#logout-button {
+    background-color: #dc3545;
+    margin-top: 20px;
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+}
