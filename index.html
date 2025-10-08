@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-toggle">
+            <button id="login-tab" class="active">Login</button>
+            <button id="signup-tab">Sign Up</button>
+        </div>
+
+        <form id="login-form" class="auth-form active">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="input-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit">Log In</button>
+            <p id="login-message" class="message"></p>
+        </form>
+
+        <form id="signup-form" class="auth-form hidden">
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" required>
+            </div>
+            <div class="input-group">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" required>
+            </div>
+            <div class="input-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" required>
+            </div>
+            <div class="input-group">
+                <label for="signup-confirm">Confirm Password</label>
+                <input type="password" id="signup-confirm" required>
+            </div>
+            <button type="submit">Create Account</button>
+            <p id="signup-message" class="message"></p>
+        </form>
+
+        <div id="dashboard" class="hidden">
+            <h2 id="welcome-message"></h2> <div id="profile-content">
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p>This is your personalized dashboard.</p>
+                <p>You can see content unique to your account here.</p>
+            </div>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
